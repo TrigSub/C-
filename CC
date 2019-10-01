@@ -3,17 +3,27 @@
 using namespace std;
 
 int main(){
-    //Name of program
-    cout << "This is the circle calculator";
+    //name of program
+    cout << "This is the circle calculator!";
     
+    //radius input and initialization
     double radius;
-    cout << "Please enter the Radius";
+    cout << " Please enter the Radius: ";
     cin >> radius;
     
+    //using value of radius to create other values of circle attributes
     double pi = 3.14;
-    double circumference;
-    double diameter;
-    double area = pi * pow(radius, 2.0)
-
+    double diameter = 2 * radius;
+    double circumference = diameter * pi;
+    double area = pi * pow(radius, 2.0);
+    
+    //output using previously defined variables
+    cout << circumference; cout << " is the circumference. ";
+    cout << " ";
+    cout << diameter; cout <<" is the diameter. ";
+    cout << " ";
+    cout << area; cout << " is the area. ";
+    
+    return 0;
     
 }
