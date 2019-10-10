@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+void nutey(){
+    int x;
+    char response;
+    cout << "Hello. What number would you like? " << '\n';
+    cin >> x;
+    cout << "Okay. Would you like to double, triple, quadruple your result? (d,t,q)" << '\n';
+    cin >> response;
+    if (response == 'd'){
+        cout << "Double your number is: " << (2*x);
+    }
+    if (response == 't'){
+        cout << "Triple your number is: " << (3*x);
+    }
+    if (response == 'q'){
+        cout << "Quadruple your number is: " << (4*x);
+    }
+    
+}
+int main(){
+    nutey();
+    return 0;
+}
