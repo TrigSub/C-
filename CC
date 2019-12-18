@@ -2,7 +2,7 @@
 #include <cmath>
 using namespace std;
 
-int main(){
+void circleCalculator_radius(){
     //name of program
     cout << "This is the circle calculator!";
     
@@ -11,19 +11,34 @@ int main(){
     cout << " Please enter the Radius: ";
     cin >> radius;
     
-    //using value of radius to create other values of circle attributes
+    //using value of radius to make other values of circle attributes
     double pi = 3.14;
     double diameter = 2 * radius;
     double circumference = diameter * pi;
     double area = pi * pow(radius, 2.0);
     
     //output using previously defined variables
-    cout << circumference; cout << " is the circumference. ";
-    cout << " ";
-    cout << diameter; cout <<" is the diameter. ";
-    cout << " ";
-    cout << area; cout << " is the area. ";
+    cout << circumference; cout << " is the circumference." << '\n';
+    cout << diameter; cout <<" is the diameter. " << '\n';
+    cout << area; cout << " is the area. " << '\n';
     
+    // try again module
+    char response;
+    cout << "Would you like to try again? (y-yes/n-no)" << '\n';
+    cin >> response;
+    if (response == 'y')
+        circleCalculator_radius();
+    if (response == 'n')
+        cout << "Thanks for using.";
+}
+
+void trigCalculator{
+    
+}
+
+}
+
+int main() {
+    circleCalculator_radius();
     return 0;
-    
 }
